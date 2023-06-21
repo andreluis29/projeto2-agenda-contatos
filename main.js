@@ -25,4 +25,6 @@ function insertName(name, userTelephone) {
 btnSubmit.addEventListener("click", (e) => {
   e.preventDefault();
   insertName(userName, userTelephone);
+  userName.value = '';
+  userTelephone.value = '';
 });
